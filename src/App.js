@@ -6,11 +6,13 @@ import Services from "pages/Services/Services";
 import Footer from "components/Footer/Footer";
 import Product from "pages/Product/Product";
 import SignUp from "pages/SignUp/SignUp";
+import ScrollToTop from "components/ScrollToTop/ScrollToTop";
 
 
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <Navbar />
             <Switch>
                 <Route path="/" exact component={Home} />
